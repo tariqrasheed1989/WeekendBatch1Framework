@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Order(failed)(failed)">
+    <classes>
+      <class name="StandaloneTest.OrderTest">
+        <methods>
+          <include name="orderValidate"/>
+          <include name="closeBrower"/>
+          <include name="DashboardPage"/>
+          <include name="PlaceOrderTest"/>
+        </methods>
+      </class> <!-- StandaloneTest.OrderTest -->
+    </classes>
+  </test> <!-- Order(failed)(failed) -->
+  <test thread-count="5" name="ErrorValidation(failed)(failed)">
+    <classes>
+      <class name="StandaloneTest.ErrorValidationTest">
+        <methods>
+          <include name="ProductValidation"/>
+          <include name="closeBrower"/>
+          <include name="DashboardPage"/>
+        </methods>
+      </class> <!-- StandaloneTest.ErrorValidationTest -->
+    </classes>
+  </test> <!-- ErrorValidation(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Suite">
+<groups>
+<run>
+<include name="Regression"></include>
+</run>
+</groups>
+  <test thread-count="5" name="Order">
+    <classes>
+      <class name="StandaloneTest.OrderTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="ErrorValidation">
+  <classes>
+      <class name="StandaloneTest.ErrorValidationTest"/>
+  </classes>
+  </test>
+</suite> <!-- Suite -->
